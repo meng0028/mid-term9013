@@ -1,0 +1,284 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+
+@import 'https://fonts.google.com/?category=Serif,Sans+Serif&query=robo&selection.family=Roboto|Roboto+Slab';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #888888;
+}
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+h1 {
+    font: bold 5rem 'Roboto Slab', 'Times', 'Georgia', serif;
+}
+
+h2 {
+    font: bold 2.5rem 'Roboto Slab', 'Times', 'Georgia', serif;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+p,
+a {
+    font: bold 1.3rem 'roboto', 'Helvetica', 'Arial', sans-serif;
+    list-style: none;
+}
+
+pre,
+code,
+kbd {
+    font: normal 1.5rem 'roboto', 'Helvetica', 'Arial', sans-serif,
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+
+/*
+small
+wrapper - 95%
+header - 100% of wrapper
+nav - 100% of wrapper
+links - 100% of nav
+main - 100% of wrapper
+columns - 100% of main
+column image - 100% of column
+footer - 100% of wrapper
+*/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    color: #333333;
+    text-shadow: 2px 2px gold;
+    background-image: url(http://loremflickr.com/1920/300/dogs);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+nav {
+    margin-top: 20px;
+    width: 100%;
+}
+
+nav>ul {
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    margin-top: 5px;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font: bold 2rem 'roboto', 'Helvetica', 'Arial', sans-serif;
+    text-decoration: none;
+    float: inherit;
+    color: gold;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {}
+
+main {
+    width: 100%;
+}
+
+.col {
+    float: none;
+    width: 100%;
+    display: inline-block;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    wrapper{
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+        display: block;
+        margin-top: 20px;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+        padding-left: 5%;
+    }
+    main {
+        width: 90%;
+        display: inline-block;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding: 3%;
+        display: inline-block;
+        text-align: left;
+    }
+    .col img {
+        width: 60%;
+        height: auto;
+        float: left;
+        padding: 0 5% 0 0;
+    }
+    footer {
+        width: 90%;
+    }
+    /*
+medium
+wrapper - 100%
+header - 100%
+nav - 90%
+links - 20% of nav
+main - 90%
+columns - 50% of main
+column image - 60% of column
+footer - 90%
+*/
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+        padding-left: 5%;
+    }
+    main {
+        width: 90%;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding: 3%;
+        text-align: left;
+    }
+    .col img {
+        width: 50%;
+        height: auto;
+        float: left;
+    }
+    footer {
+        width: 100%;
+    }
+    /*
+large
+header - 100%
+nav - 90%
+links - 20% of nav
+main - 90%
+columns - 50% of main
+column image - 50% of column
+footer - 100%
+*/
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 30%;
+        float: left;
+        text-align: left;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        margin-top: 5%;
+        width: 100%;
+    }
+    main {
+        width: 70%;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        text-align: left;
+        padding: 3%;
+    }
+    .col img {
+        width: 55%;
+        height: auto;
+        float: left;
+    }
+    footer {
+        width: 100%;
+    }
+    /*
+extra large
+header - 100%
+nav - 30%
+links - 100% of nav
+main - 70%
+columns - 50% of main
+column image - 55% of column width
+footer - 100%
+*/
+}
